@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Miyako Blue Snorkeling</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-100">
+    <nav class="fixed w-full z-50 glass-card mt-4 mx-auto max-w-6xl left-0 right-0 rounded-full px-8 py-4 flex justify-between items-center">
+        <div class="text-2xl font-black tracking-tighter text-gradient">MIYAKO BLUE</div>
+        <div class="hidden md:flex gap-8 font-bold text-gray-700">
+            <a href="index.html" class="hover:text-cyan-600 transition">TOP</a>
+            <a href="course.html" class="hover:text-cyan-600 transition">COURSE</a>
+            <a href="teachers.html" class="hover:text-cyan-600 transition">TEACHERS</a>
+            <a href="trial.html" class="text-cyan-600 transition font-black underline decoration-2 underline-offset-4">TRIAL</a>
+        </div>
+        <a href="trial.html" class="bg-gradient-to-r from-cyan-600 to-blue-600 text-white px-6 py-2 rounded-full font-bold">予約する</a>
+    </nav>
+
+    <section class="pt-40 pb-24 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="glass-card rounded-[40px] p-12 shadow-2xl bg-white/80">
+                <h1 class="text-4xl font-black tracking-tighter mb-4 text-center">体験予約・お問い合わせ</h1>
+                <p class="text-gray-600 text-center mb-12">宮古島の海への第一歩。以下のフォームよりお気軽にお申し込みください。</p>
+                
+                <form class="space-y-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <label class="block text-sm font-black text-gray-700 mb-2 uppercase tracking-widest">お名前</label>
+                            <input type="text" placeholder="宮古 太郎" class="w-full bg-slate-50 border border-gray-200 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-cyan-500 outline-none transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-black text-gray-700 mb-2 uppercase tracking-widest">メールアドレス</label>
+                            <input type="email" placeholder="example@mail.com" class="w-full bg-slate-50 border border-gray-200 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-cyan-500 outline-none transition">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-black text-gray-700 mb-2 uppercase tracking-widest">希望コース</label>
+                        <select class="w-full bg-slate-50 border border-gray-200 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-cyan-500 outline-none transition appearance-none">
+                            <option>体験シュノーケリング (¥8,000)</option>
+                            <option>ボート・シュノーケル (¥15,000)</option>
+                            <option>サンセット＆ナイト (¥12,000)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-black text-gray-700 mb-2 uppercase tracking-widest">希望日時</label>
+                        <input type="date" class="w-full bg-slate-50 border border-gray-200 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-cyan-500 outline-none transition">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-black text-gray-700 mb-2 uppercase tracking-widest">備考・ご質問</label>
+                        <textarea rows="4" placeholder="泳ぎが苦手な方がいる場合や、特別なリクエストがあればご記入ください。" class="w-full bg-slate-50 border border-gray-200 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-cyan-500 outline-none transition"></textarea>
+                    </div>
+
+                    <button type="button" class="w-full bg-gradient-to-r from-cyan-600 to-blue-600 text-white font-black text-xl py-6 rounded-2xl shadow-xl hover:opacity-90 transform active:scale-[0.98] transition-all">
+                        この内容で予約リクエストを送る
+                    </button>
+                </form>
+                
+                <div class="mt-12 pt-12 border-t border-gray-100 text-center">
+                    <p class="text-sm text-gray-500 mb-4">お急ぎの方はお電話でも承っております</p>
+                    <p class="text-3xl font-black text-gray-900 tracking-tighter">0980-XX-XXXX</p>
+                    <p class="text-xs text-gray-400 mt-2">受付時間: 8:00 - 20:00 (年中無休)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-16 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-gray-500 text-sm">&copy; 2024 Miyako Blue Snorkeling School. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
